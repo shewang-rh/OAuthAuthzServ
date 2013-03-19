@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!DOCTYPE web-app
-    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-    "http://java.sun.com/dtd/web-app_2_3.dtd">
-
 <web-app>
 
     <display-name>MyEclipse AuthzServer Examples</display-name>
@@ -22,6 +18,26 @@
         <servlet-name>AuthzServer</servlet-name>
         <url-pattern>/servlet/AuthzServer</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>TokenServer</servlet-name>
+        <servlet-class>TokenServer</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>TokenServer</servlet-name>
+        <url-pattern>/servlet/TokenServer</url-pattern>
+    </servlet-mapping>
+	
+    <servlet>
+        <servlet-name>ResourceQueryServer</servlet-name>
+        <servlet-class>ResourceQueryServer</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ResourceQueryServer</servlet-name>
+        <url-pattern>/servlet/ResourceQueryServer</url-pattern>
+    </servlet-mapping>	
 
 
 </web-app>

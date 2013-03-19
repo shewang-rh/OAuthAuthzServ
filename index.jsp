@@ -1,5 +1,6 @@
 <!--
- http://localhost:8080/OAuthAuthzServ/servlet/AuthzServer?response_type=code&client_id=123&redirect_uri=www.example.com&state=test&scope=test
+ AuthzEndpoint: http://localhost:8080/OAuthAuthzServ/servlet/AuthzServer?response_type=code&client_id=123&redirect_uri=www.example.com&state=test&scope=test
+ TokenEndpoint: http://localhost:8080/OAuthAuthzServ/servlet/TokenServer?client_id=test_id&grant_type=authorization_code&code=known_authz_code
  -->
 
 <html>
@@ -13,7 +14,7 @@
     <a href="pages/myhelloworld_jstl.jsp">pages/myhelloworld_jstl.jsp</a> - JSTL Hello World Example
   </li>
   <li>
-    <a href="pages/myhelloworld_bean.jsp">pages/myhelloworld_bean.jsp</a> - JSP & Java Bean Hello World Example
+       <a href="servlet/TokenServer">servlet/TokenServer</a> - OAuth Token Server Example
   </li>
   
   <li>
